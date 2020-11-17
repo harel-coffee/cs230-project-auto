@@ -1,3 +1,11 @@
+# Contents
+- classifier_hyperparam_tuning: uses Keras Tuner to identify best hyperparams (e.g., size & number of hidden layers) optimizing for performance on training set
+- classifier_validation_tuning: uses Keras Tuner to identify best hyperparams (e.g., l2 and dropout) for performance on validation set; attempt to address overfitting
+- classifier_validation_tuning_sigmoid: same as above using sigmoid instead of softmax for activation of output layer
+- smote: creates synthetic data using approach explained [here](https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/)
+- classifier_hyperparam_tuning_SMOTE: **all of the above** combined
+- regressor_hyperparam_tuning: same as first item listed above, but treats BDI-II prediction as regression problem instead of classification
+
 # Usage
 
 To run jupyter notebooks from AWS instance:
@@ -22,9 +30,4 @@ Note `activate_env` is an alias for `source activate tensorflow_p36`. The alias 
 
 Copy the URL below that into your browser and it will bring up a web interface to the existing notebooks. If you're creating a new notebook and want to use the same environment, be sure to choose `Environment (conda_tensorflow2_p36)`
 
-# Contents
-- classifier_hyperparam_tuning: uses Keras Tuner to identify best hyperparams (e.g., size & number of hidden layers) optimizing for performance on training set
-- classifier_validation_tuning: uses Keras Tuner to identify best hyperparams (e.g., l2 and dropout) for performance on validation set; attempt to address overfitting
-- classifier_validation_tuning_sigmoid: same as above using sigmoid instead of softmax for activation of output layer
-- smote: creates synthetic data using approach explained [here](https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/)
-- regressor_hyperparam_tuning: same as first item listed above, but treats BDI-II prediction as regression problem instead of classification
+
